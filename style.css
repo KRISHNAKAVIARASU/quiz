@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.outerbox{
+    margin-top: 20vh;
+    padding: 20px;
+    width:35%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(255, 232, 236);
+}
+button{
+    border-style: none;
+    margin-top: 10px;
+    height: 35px;
+}
+.contentbutton,.contentbutton-correct{
+    width: 90%;
+    background-color: white;
+    text-align:left;
+    padding:2px;
+}
+.optionbutton,.optionbutton-correct{
+    background-color: rgb(190, 60, 60);
+    width: 30px;
+    width: 40px;
+    color: white;
+    border-style: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>correct answer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outerbox">
+        <div class="question">
+            <h1>In web design, what does CSS stand for?</h1>
+        </div>
+        <div class="options">
+            <div class="firstoption" onclick="wronganswer(0)">
+                <button class="optionbutton">A</button>
+                <button class="contentbutton">Counter Strike: Source</button>
+            </div>
+            <div class="secondoption" onclick="wronganswer(1)">
+                <button class="optionbutton">B</button>
+                <button class="contentbutton">Corrective Style Sheet</button>
+            </div>
+
+            <div class="thirdoption" onclick="wronganswer(2)">
+                <button class="optionbutton">C</button>
+                <button class="contentbutton">Computer Style Sheet</button>
+            </div>
+
+            <div class="fourthoption" onclick="correctanswer()">
+                <button class="optionbutton-correct" >D</button>
+                <button class="contentbutton-correct" >Cascading Style Sheet</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function correctanswer(){
+            var element = document.getElementsByClassName("contentbutton-correct")[0];
+            element.style.backgroundColor = "green";
+            element.style.color = "white";
+        }
+        function wronganswer(elen){
+            var element = document.getElementsByClassName("contentbutton")[elen];
+            element.style.backgroundColor = "red";
+            element.style.color = "white";
+        }
+
+    </script>
+</body>
+</html>
